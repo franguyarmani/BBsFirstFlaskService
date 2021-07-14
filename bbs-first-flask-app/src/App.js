@@ -6,8 +6,8 @@ function App() {
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
-    fetch('/time').then(res => res.json()).then(data => {
-      setCurrentTime(data.time);
+    fetch('/title').then(res => res.json()).then(data => {
+      setCurrentTime(data.title);
     });
   }, []);
 
@@ -26,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-        <p>The current time is {currentTime}.</p>
+        <p>The feed we are using is {currentTime}.</p>
       </header>
     </div>
   );
