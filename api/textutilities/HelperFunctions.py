@@ -6,9 +6,9 @@ import textutilities.CleaningFunctions as c
 import textutilities.FilterFunctions as f
 
 
-def make_wordbank(listOfTexts):
+def make_wordbank(list_of_texts):
     wordbank = []
-    for text in listOfTexts:
+    for text in list_of_texts:
         clean = cleaner(text)
         print("text cleaned")
         no_extra_words = f.unified_word_filter(clean)
