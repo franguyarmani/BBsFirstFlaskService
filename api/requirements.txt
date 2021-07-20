@@ -2,3 +2,4 @@ nltk
 feedparser
 Flask
 robin_stocks
+wordcloud
