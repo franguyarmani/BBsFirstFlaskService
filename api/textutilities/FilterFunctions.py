@@ -23,9 +23,9 @@ def remove_Pnouns(List):
 
 def unified_word_filter(words):  # combination of remove_Pnouns and remove stop_words for efficiency
     noExtra = []
-    lst = pos_tag(words)
-    for word in lst:
-        pos = word[1]
+    for word in words:
+        lst = pos_tag(words)
+        pos = lst[1]
         if pos != 'NNP' and word not in stopwords.words('english'):
             noExtra.append(word)
     return noExtra

@@ -1,6 +1,5 @@
 from nltk.tokenize import WordPunctTokenizer
 from nltk.stem.wordnet import WordNetLemmatizer
-from nltk.tag import pos_tag
 
 import textutilities.CleaningFunctions as c
 import textutilities.FilterFunctions as f
