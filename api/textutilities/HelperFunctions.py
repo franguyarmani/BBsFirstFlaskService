@@ -7,7 +7,7 @@ import textutilities.FilterFunctions as f
 
 
 def make_wordbank(listOfTexts):
-    wordBank = []
+    wordbank = []
     for text in listOfTexts:
         clean = cleaner(text)
         print("text cleaned")
@@ -15,8 +15,8 @@ def make_wordbank(listOfTexts):
         print("removed useless words")
         lemmatized = lemmatizer(no_extra_words)
         print("lemmatized")
-        wordBank.extend(lemmatized)
-    return wordBank
+        wordbank.extend(lemmatized)
+    return wordbank
 
 
 def cleaner(raw_text):
